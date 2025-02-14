@@ -1,0 +1,126 @@
+/* Стили для сайта */
+
+/* Общие стили для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* Стили для шапки сайта */
+header {
+    background-color: #2d2d2d;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Стили для навигации */
+nav {
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Стили для секций */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #2d2d2d;
+    color: #bbb;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Адаптивность */
+
+/* Для мобильных устройств (ширина экрана до 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Уменьшаем размер шрифта */
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        text-align: left; /* Сдвигаем навигацию влево */
+    }
+
+    nav ul li {
+        display: block; /* Делаем пункты меню вертикальными */
+        margin: 10px 0; /* Отступы между элементами */
+    }
+
+    nav ul li a {
+        font-size: 1.5em; /* Увеличиваем размер шрифта для лучшей читаемости */
+    }
+
+    section {
+        padding: 15px; /* Уменьшаем отступы внутри секций */
+        margin: 15px 0; /* Уменьшаем отступы между секциями */
+    }
+
+    footer {
+        position: static; /* Футер будет ниже контента, а не фиксирован */
+    }
+}
+
+/* Для очень маленьких экранов (до 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Еще больше уменьшаем шрифт для маленьких экранов */
+    }
+
+    nav ul li a {
+        font-size: 1.2em; /* Уменьшаем размер текста в меню */
+    }
+
+    section {
+        padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+
+    footer {
+        font-size: 0.8em; /* Уменьшаем размер текста в футере */
+    }
+}
